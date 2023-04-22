@@ -23,19 +23,37 @@ Installing
 
 Windows PC and Steam Deck
 
-1. Launch Steam in Desktop Mode. Right-click the game in Steam, then click Properties → Local Files → Browse to open the game's install folder. Then open the "exe" folder, where you'll find MMBN_LC1.exe or MMBN_LC2.exe.
+1. Download and install chaudloader: https://github.com/RockmanEXEZone/chaudloader/releases Version 0.8.0 or newer is required.
 
-2. Download and install bnlc-mod-loader in this folder: https://github.com/bigfarts/bnlc-mod-loader/releases
+2. Launch Steam in Desktop Mode. Right-click the game in Steam, then click Properties → Local Files → Browse to open the game's install folder. Then open the "exe" folder, where you'll find MMBN_LC1.exe or MMBN_LC2.exe.
 
-3. Create a "mods" folder in the same folder, if it doesn't yet exist.
+3. Copy the PixelFont_Vol1 (for MMBNLC Vol. 1) or PixelFont_Vol2 (for MMBNLC Vol. 2) folder to the "mods" folder.
 
-4. Copy the PixelFont_Vol1 (for MMBNLC Vol. 1) or PixelFont_Vol2 (for MMBNLC Vol. 2) folder to the "mods" folder.
-
-5. Launch the game via Steam.
+4. Launch the game as normal.
 
 Nintendo Switch
 
-To be added.
+1. Install Atmosphère.
+
+2. Open your microSD card in File Explorer and go to the "atmosphere" folder, then create a "contents" folder (if it does not yet exist).
+
+3. Copy the 010038E016264000 (for MMBNLC Vol. 1) and/or 0100734016266000 (for MMBNLC Vol. 2) folder(s) to the "contents" folder.
+
+4. Launch the game in Atmosphère.
+
+
+Version History
+---------------
+
+Ver. 1.0.1 - 29 April 2023
+
+* No functional changes from Ver. 1.0.0, so if the mod is working fine for you, no need to update!
+* Steam: Updated to new chaudloader API. The mod now requires chaudloader version 0.8.0 or newer.
+* Nintendo Switch: Added Nintendo Switch (LayeredFS) version.
+
+Ver. 1.0.0 - 21 April 2023
+
+* Initial version.
 
 
 Building
@@ -50,7 +68,8 @@ Building is supported on Windows 10 & 11. First install the following prerequisi
 
 Then, run one of the following commands:
 
-* make - Builds the mod files compatible with bnlc-mod-loader. You can only build this mod when MMBN Legacy Collection Volume 1 and/or 2 is installed, the make script will build the mod files for the volume(s) you have installed.
+* make / make steam - Builds the mod files compatible with chaudloader. You can only build this mod when MMBN Legacy Collection Volume 1 and/or 2 is installed, the make script will build the mod files for the volume(s) you have installed.
+* make switch - Builds the mod files compatible with LayeredFS.
 * make clean - Removes all temporary files and build outputs.
-* make install - Installs the previously built mod files into the mods folder for bnlc-mod-loader.
-* make uninstall - Removes the installed mod files from the mods folder for bnlc-mod-loader.
+* make install - Installs the previously built mod files into the mods folder for chaudloader.
+* make uninstall - Removes the installed mod files from the mods folder for chaudloader.

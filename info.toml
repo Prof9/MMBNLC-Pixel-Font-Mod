@@ -1,3 +1,4 @@
 title = "Pixel Font"
-version = "1.0.0"
+version = "1.0.1"
 authors = [ "Prof. 9" ]
+requires_loader_version = ">=0.8.0"

@@ -1,7 +1,7 @@
 # Ignore build folder
-/build/
+/_build/
 # Ignore temp folder
-/temp/
+/_temp/
 # Ignore files not necessary to build mojifont
 /exe*/*_mojifont/glyphs
 /exe*/*_mojifont/tbl
